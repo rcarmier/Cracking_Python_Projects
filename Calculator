@@ -1,3 +1,7 @@
+# A Calculator made in Python
+# Created by Rey Carmier with help from Doug Purcell's Cracking Python Bootcamp
+#
+
 from math import sin, cos, tan
 from math import radians
 from math import log
@@ -46,11 +50,56 @@ modulus operation
 a1 = float(input('Modulus: Enter first number '))
 a2 = float(input('Enter second number '))
 a3 = a1 % a2
-print(a1, '%', a2, = a3)
+print(a1, '%', a2, '=', a3)
 
 '''
 square root operation
 '''
 
 a1 = float(input('Square root: Enter number to take square root of '))
-print('√', a1, '=', sqrt(a1))
+print('square root', a1, '=', sqrt(a1))
+
+'''
+exponentiation
+'''
+
+b = float(input("Exponentiation. Enter a number for the 'base' "))
+n = int(input('Enter the power '))
+result = b ** n 
+print(b, '^', n, '=', result)
+
+'''
+basic trigonometry: sin(), cos(), trig: in both radians and degrees
+'''
+
+
+a = float(input('Enter number to compute, sin, cos, and tan of '))
+
+# calculate degrees
+
+sine_degs = sin(radians(a))
+cosine_degs = cos(radians(a))
+tangent_degs = tan(radians(a))
+
+# calculate radians
+sine_rads = sin(a)
+cosine_rads = cos(a)
+tangent_rads = tan(a)
+
+print(sine_degs, 'degrees sine')
+print(sine_rads, 'r sine')
+
+print(cosine_degs, 'degrees cosine')
+print(cosine_rads, 'r cosine')
+
+print(tangent_degs, 'degrees tangent')
+print(tangent_rads, 'r tangent')
+
+'''
+Implement the logarithm. In mathematics the logarithm is the inverse function of exponentiation.
+'''
+
+x = float(input('Logarithm. Enter the value of x '))
+base = float(input('Enter the base '))
+logarithm = log(x,base)
+print('log base', base, 'of', x, logarithm)

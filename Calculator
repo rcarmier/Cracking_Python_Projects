@@ -1,6 +1,21 @@
-# A Calculator made in Python
-# Created by Rey Carmier with help from Doug Purcell's Cracking Python Bootcamp
+# A Calculator made with Python
+# Date: 03/22/2020
+# This is a simple, text-based calculator
+# The user is prompted to enter two inputs and this prints out an answer
 #
+# The operations included are; 
+# addition
+# subtraction 
+# multiplication
+# division
+# modulus
+# square root
+# exponential
+# basic trigenometry: (sin, cos, tan)
+# shows results in both radians and degrees
+# logarithm
+#
+# Created by Rey Carmier with help from Doug Purcell's Cracking Python Bootcamp
 
 from math import sin, cos, tan
 from math import radians
@@ -103,3 +118,5 @@ x = float(input('Logarithm. Enter the value of x '))
 base = float(input('Enter the base '))
 logarithm = log(x,base)
 print('log base', base, 'of', x, logarithm)
+()
+print('This concludes the calculator!')
